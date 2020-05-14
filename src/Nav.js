@@ -1,16 +1,31 @@
-// import React, { useContext } from 'react';
-// import { MovieContext } from './MovieContext';
+import React, { useContext } from 'react';
+import styled from '@emotion/styled';
 
-// const Nav = () => {
+const NavBar = styled.nav`
+  background: #412c41;
+  color: #fff;
+  // display: flex;
+  // justify-content: space-around;
+  padding: 30px 60px;
+`;
 
-//     const [movies, setMovies] = useContext(MovieContext);
+const Nav = () => {
 
-//   return (
-//     <div className="navbar">
-//       <h3>Dev Ed</h3>
-//       <p>List of Movies: {movies.length}</p>
-//     </div>
-//   );
-// };
+  return (
+    <NavBar>
+      <a href="">BookLibs</a>
+      <div>
+        <input type="text" placeholder="Search on BookLibs" />
+      </div>
+      <div>
+        <a href="#">Share Link</a>
+        <a>LL</a>
+        <a>NN</a>
+        <a>IM</a>
+      </div>
 
-// export default Nav;
+    </NavBar>
+  );
+};
+
+export default Nav;
